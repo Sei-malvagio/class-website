@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 160px;
+  margin-left: 180px;
   font-size: 17px;
   text-decoration: none;
   text-transform: capitalize;
@@ -28,6 +28,9 @@ body {
   justify-content: center;
   transition: all .2 ease;
   background-color: #272829;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 
 .wrap {
@@ -119,7 +122,8 @@ body {
 
 .container {
   position: absolute;
-  margin: 75px;
+  margin-top: 200px;
+  margin-left: 75px;
   color: #eee;
   width: 396px;
 }
@@ -138,7 +142,7 @@ body {
 .container2 {
   position: absolute;
   background: #eee;
-  width: 850px;
+  width: 864px;
   height: 300px;
   margin-top: 260px;
   padding: 80px;
@@ -224,10 +228,11 @@ body {
   }
 }
 
-.text2, .p2{
+.text2, .p2 {
   animation: RightToLeft 1s ease forwards;
 }
-.text3, p3, #text1, #text2, .btn-1 {
+
+.text3, .text6 , p3, #text1, #text2, .btn-1 {
   animation: leftToRight 1s ease forwards;
 }
 
@@ -256,7 +261,7 @@ body {
 
 .img1 {
   margin-left: 60%;
-  margin-top: 120px;
+  margin-top: 250px;
   border-radius: 60px;
   transition: .3s ease-in-out;
   opacity: 1;
@@ -293,11 +298,11 @@ body {
   height: 30px;
   text-align: center;
   color: #fff;
-  font-size: 1.8em;
+  font-size: 1.9em;
   border: 1px solid #645CAD;
   background: #645CAD;
   border-radius: 15px;
-  padding: 10px;
+  padding: 7px;
   font-family: 'Josefin Sans', sans-serif;
   position: absolute;
   font-weight: 590;
@@ -307,4 +312,38 @@ body {
 .btn-list:hover {
   color: #645CAD;
   background: transparent;
+}
+
+.container4 {
+  overflow: hidden;
+  height: 700px;
+  line-height: 50;
+  margin-top: 1200px;
+  width: 87%;
+  position: absolute;
+  left: 7%;
+}
+
+#image-track {
+  padding-top: 600px;
+  display: flex;
+  gap: 4vmin;
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.text6Head {
+  color: #fff;
+}
+
+.text6 {
+  font-size: 2em;
+  position: absolute;
+  margin-top: 1150px;
+  margin-left: 8%;
 }
